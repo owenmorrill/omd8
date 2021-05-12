@@ -1,0 +1,28 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - grunt-contrib-qunit > grunt-lib-phantomjs > phantomjs > request > hawk > hoek:
+        patched: '2021-05-12T19:04:54.023Z'
+    - grunt-contrib-qunit > grunt-lib-phantomjs > phantomjs > request > hawk > boom > hoek:
+        patched: '2021-05-12T19:04:54.023Z'
+    - grunt-contrib-qunit > grunt-lib-phantomjs > phantomjs > request > hawk > sntp > hoek:
+        patched: '2021-05-12T19:04:54.023Z'
+    - grunt-contrib-qunit > grunt-lib-phantomjs > phantomjs > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-05-12T19:04:54.023Z'
+  'npm:mime:20170907':
+    - testswarm > request > mime:
+        patched: '2021-05-12T19:04:54.023Z'
+    - testswarm > request > form-data > mime:
+        patched: '2021-05-12T19:04:54.023Z'
+  'npm:request:20160119':
+    - grunt-contrib-qunit > grunt-lib-phantomjs > phantomjs > request:
+        patched: '2021-05-12T19:04:54.023Z'
+  'npm:tough-cookie:20170905':
+    - grunt-contrib-qunit > grunt-lib-phantomjs > phantomjs > request > tough-cookie:
+        patched: '2021-05-12T19:04:54.023Z'
+  'npm:tunnel-agent:20170305':
+    - grunt-contrib-qunit > grunt-lib-phantomjs > phantomjs > request > tunnel-agent:
+        patched: '2021-05-12T19:04:54.023Z'
